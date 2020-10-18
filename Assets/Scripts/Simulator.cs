@@ -54,22 +54,22 @@ public class Simulator : MonoBehaviour
 
     public void SimulateRotateUp(float speed_)
     {
-        Camera.transform.RotateAround(Camera.transform.position, Vector3.left, Time.deltaTime * speed_);
+        Camera.transform.RotateAround(world.transform.position, Vector3.left, Time.deltaTime * speed_);
     }
 
     public void SimulateRotateDown(float speed_)
     {
-        Camera.transform.RotateAround(Camera.transform.position, Vector3.right, Time.deltaTime * speed_);
+        Camera.transform.RotateAround(world.transform.position, Vector3.right, Time.deltaTime * speed_);
     }
 
     public void SimulateRotateLeft(float speed_)
     {
-        Camera.transform.RotateAround(Camera.transform.position, Vector3.up, Time.deltaTime * speed_);
+        Camera.transform.RotateAround(world.transform.position, Vector3.up, Time.deltaTime * speed_);
     }
 
     public void SimulateRotateRight(float speed_)
     {
-        Camera.transform.RotateAround(Camera.transform.position, Vector3.down, Time.deltaTime * speed_);
+        Camera.transform.RotateAround(world.transform.position, Vector3.down, Time.deltaTime * speed_);
     }
 
 
